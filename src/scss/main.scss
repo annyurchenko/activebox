@@ -1,0 +1,13 @@
+@import "scss-reset/_reset.scss";
+@import "utils";
+@import "variables";
+@import "fonts";
+@import "base";
+
+// Components
+@import "screens/swiper";
+
+// Screens
+@import "screens/testimonials";
+@import "screens/hero";
+@import "screens/header";

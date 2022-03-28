@@ -1,0 +1,12 @@
+body {
+  font-size: $base-font-size;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  $gutter: 20px;
+
+  max-width: 1170px + 2 * $gutter;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
