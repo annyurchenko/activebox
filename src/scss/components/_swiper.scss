@@ -1,0 +1,38 @@
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 12.5px;
+
+  @include mobile {
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 31px;
+
+  @include tablet {
+    margin-top: 23px;
+  }
+
+  &-bullet {
+    border: 1px solid #7e5d6f;
+    background: none;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+
+    @include tablet {
+      width: 9.5px;
+
+      height: 9.5px;
+    }
+
+    &-active {
+      background: #7e5d6f;
+    }
+  }
+}

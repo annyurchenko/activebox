@@ -1,0 +1,60 @@
+.testimonials {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__quote {
+    width: 50%;
+    background: #5c3249;
+    padding: 116px 170px 116px 129px;
+
+    @include tablet {
+      padding: 47px 104px 110px 88px;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 0 20px 95px;
+      text-align: center;
+    }
+  }
+
+  &__quote-text {
+    padding: 17.5px 0;
+    font-family: Cardo, sans-serif;
+    font-size: rem(36px);
+    line-height: rem(49px);
+    text-transform: capitalize;
+    color: white;
+
+    @include tablet {
+      font-size: rem(24px);
+      line-height: rem(32px);
+    }
+  }
+
+  &__quote-author {
+    font-weight: 700;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-transform: uppercase;
+    color: white;
+
+    @include tablet {
+      font-size: rem(12px);
+      line-height: rem(14px);
+    }
+  }
+}
