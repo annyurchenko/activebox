@@ -1,18 +1,20 @@
 $base-font-size: 16px;
 
 $colors: (
-  lightRed: #ff4343,
-  red: #e71414,
-  darkRed: #b90c0c,
-  blue: #2c3154,
-  lightBlue: #353c65,
-  purple: #5c3249,
-  white: #ffffff,
-  lightGray: #e5e5e5,
-  gray: #babbc5,
-  middleGray: #808080,
-  darkGray: #6c7279,
-  dark: #2d3033,
+  "lightRed": #ff4343,
+  "red": #e71414,
+  "darkRed": #b90c0c,
+  "blue": #2c3154,
+  "lightBlue": #353c65,
+  "darkBlue": #252b49,
+  "purple": #5c3249,
+  "white": #ffffff,
+  "lightGray": #e5e5e5,
+  "gray": #babbc5,
+  "middleGray": #808080,
+  "darkGray": #6c7279,
+  "dark": #2d3033,
+  "black": #000000,
 );
 
 $breakpoints: (
