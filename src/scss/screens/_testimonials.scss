@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .testimonials {
   display: flex;
 
@@ -17,7 +19,7 @@
 
   &__quote {
     width: 50%;
-    background: #5c3249;
+    background: map.get($colors, "purple");
     padding: 116px 170px 116px 129px;
 
     @include tablet {
@@ -37,7 +39,7 @@
     font-size: rem(36px);
     line-height: rem(49px);
     text-transform: capitalize;
-    color: white;
+    color: map.get($colors, "white");
 
     @include tablet {
       font-size: rem(24px);
@@ -50,7 +52,7 @@
     font-size: rem(13px);
     line-height: rem(15px);
     text-transform: uppercase;
-    color: white;
+    color: map.get($colors, "white");
 
     @include tablet {
       font-size: rem(12px);

@@ -23,32 +23,45 @@
           />
         </div>
 
-        <input id="burger-checkbox" class="header__checkbox" type="checkbox" />
-
-        <label class="header__label" for="burger-checkbox">
-          <img class="header__toggler" src="./images/burger.svg" alt="Burger" />
-        </label>
+        <div class="header__burger">
+          <span class="header__burger-line"></span>
+        </div>
 
         <div class="header__menu">
           <ul class="header__menu-list">
             <li>
-              <a class="header__menu-item" href="#">Главная</a>
+              <a class="header__menu-item" href="#">features</a>
             </li>
             <li>
-              <a class="header__menu-item" href="#">О нас</a>
+              <a class="header__menu-item" href="#">works</a>
             </li>
             <li>
-              <a class="header__menu-item" href="#">Контакты</a>
+              <a class="header__menu-item" href="#">our team</a>
+            </li>
+            <li>
+              <a class="header__menu-item" href="#">testimonials</a>
+            </li>
+            <li>
+              <a class="header__menu-item" href="#">download</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-
-
-    <section class="hero"></section>
-
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__container container">
+        <h1 class="hero__title">
+          Your Favorite One PageMulti Purpose Template
+        </h1>
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          commodo cursus magna vel scelerisque nisl consectetur et.
+        </p>
+        <button class="hero__button button">Find Out More</button>
+      </div>
+    </section>
 
   <section class="team">
     <div class="team__container">
@@ -285,8 +298,8 @@
   </div>
 </footer>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/burger.js"></script>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
