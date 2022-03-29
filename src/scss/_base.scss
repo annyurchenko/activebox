@@ -55,7 +55,11 @@ p {
 }
 
 .container {
-  $gutter: 20px;
+  $gutter: 170px;
+
+  @include tablet {
+    $gutter: 20px;
+  }
 
   max-width: 1170px + 2 * $gutter;
   margin: 0 auto;

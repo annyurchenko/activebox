@@ -28,6 +28,10 @@
     justify-content: center;
   }
 
+  &__content.active{
+    opacity: 0;
+  }
+
   &__title {
     text-align: center;
     color: map.get($colors, "white");
