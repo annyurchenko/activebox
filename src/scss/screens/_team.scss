@@ -1,0 +1,23 @@
+.team {
+  &__container {
+    padding: 114px 170px;
+
+    @include tablet {
+      padding: 78px 20px;
+    }
+    @include mobile {
+        padding: 35px 20px;
+      }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    @include tablet {
+      gap: 25px;
+    }
+    @include mobile {
+       flex-direction: column;
+      }
+  }
+}
