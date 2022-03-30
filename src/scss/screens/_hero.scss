@@ -23,10 +23,6 @@
   &__container {
     padding-top: 100px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     @include tablet {
       padding-top: 0;
     }
@@ -35,7 +31,12 @@
       padding-top: 0;
     }
   }
-
+  
+&__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   &__content.active {
     opacity: 0;
   }
@@ -74,12 +75,10 @@
   }
 
   &__button {
-    margin-top: 82px;
-    margin-bottom: 120px;
+    margin: 82px auto;
 
     @include tablet {
-      margin-top: 91.57px;
-      margin-bottom: 126px;
+      margin: 92px auto;
     }
 
     @include mobile {
