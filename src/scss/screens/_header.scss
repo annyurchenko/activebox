@@ -22,6 +22,7 @@
 
   &__menu-list {
     display: flex;
+    overflow: auto;
     transition: all 0.3s ease 0s;
 
     @include mobile {
@@ -31,9 +32,6 @@
       left: 20;
       height: 100%;
       width: 100%;
-
-      /*background-color: rgb(30, 35, 83);
-      background-position: top -100% left -20;*/
     }
   }
 
@@ -57,7 +55,6 @@
     border-bottom: 3px solid transparent;
 
     &:hover {
-
       border-bottom: 3px solid map.get($colors, "gray");
     }
 
@@ -93,61 +90,5 @@
       z-index: 3;
       float: left;
     }
-  }
-
-  &__burger {
-    display: none;
-
-    @include mobile {
-      display: block;
-      float: right;
-      width: 24px;
-      height: 18px;
-      position: relative;
-      z-index: 3;
-    }
-  }
-
-  &__burger::before,
-  &__burger::after {
-    content: "";
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  &__burger::before {
-    top: 0;
-  }
-
-  &__burger::after {
-    bottom: 0;
-  }
-
-  &__burger.active::before {
-    transform: rotate(45deg);
-    top: 7px;
-  }
-
-  &__burger.active::after {
-    transform: rotate(-45deg);
-    bottom: 8px;
-  }
-
-  &__burger-line {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    top: 8px;
-    transition: all 0.3s ease 0s;
-  }
-
-  &__burger.active > .header__burger-line {
-    transform: scale(0);
   }
 }

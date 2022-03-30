@@ -28,48 +28,6 @@ h3 {
   font-weight: 700;
   font-size: rem(30px);
   line-height: rem(35px);
-}
-
-h4 {
-  font-weight: 900;
-  font-size: rem(24px);
-  line-height: rem(28px);
-}
-
-h5 {
-  font-weight: 400;
-  font-size: rem(18px);
-  line-height: rem(21px);
-}
-
-h6 {
-  font-weight: 700;
-  font-size: rem(13px);
-  line-height: rem(15px);
-}
-
-p {
-  font-weight: 400;
-  font-size: rem(24px);
-  line-height: rem(28px);
-}
-
-.container {
-  $gutter: 170px;
-
-  @include tablet {
-    $gutter: 20px;
-  }
-
-  max-width: 1170px + 2 * $gutter;
-  margin: 0 auto;
-  padding: 0 $gutter;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: rem(30px);
-  line-height: rem(35px);
 
   @include tablet {
     font-weight: 500;
@@ -94,6 +52,7 @@ h4 {
 }
 
 h5 {
+  font-weight: 400;
   font-size: rem(18px);
   line-height: rem(21px);
 
@@ -107,33 +66,26 @@ h5 {
   }
 }
 
-.button {
-  background-color: map.get($colors, "lightRed");
-  width: 369px;
-  height: 70px;
-  text-align: center;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: map.get($colors, "white");
+h6 {
+  font-weight: 700;
+  font-size: rem(13px);
+  line-height: rem(15px);
+}
 
-  &:hover {
-    cursor: pointer;
-    background-color: map.get($colors, "red");
-  }
+p {
+  font-weight: 400;
+  font-size: rem(24px);
+  line-height: rem(28px);
+}
 
-  &:active {
-    box-shadow: 4px 4px 30px 0px rgba(255, 67, 67, 1);
-    background-color: map.get($colors, "lightRed");
-  }
+.container {
+  $gutter: 170px;
 
   @include tablet {
-    width: 313px;
+    $gutter: 20px;
   }
 
-  @include mobile {
-    width: 100%;
-  }
+  max-width: 1170px + 2 * $gutter;
+  margin: 0 auto;
+  padding: 0 $gutter;
 }

@@ -26,9 +26,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablet {
+      padding-top: 0;
+    }
+
+    @include mobile {
+      padding-top: 0;
+    }
   }
 
-  &__content.active{
+  &__content.active {
     opacity: 0;
   }
 
@@ -40,13 +48,13 @@
     @include tablet {
       font-size: rem(48px);
       line-height: rem(56px);
-      padding: 157px 0 61.86px;
+      padding: 257px 0 61.86px;
     }
 
     @include mobile {
       font-size: rem(36px);
       line-height: rem(42px);
-      padding: 70.27px 0 32.71px;
+      padding: 106px 0 32.71px;
     }
   }
 
@@ -66,14 +74,17 @@
   }
 
   &__button {
-    margin: 82px 0 120px;
+    margin-top: 82px;
+    margin-bottom: 120px;
 
     @include tablet {
-      margin: 91.57px 0 126px;
+      margin-top: 91.57px;
+      margin-bottom: 126px;
     }
 
     @include mobile {
-      margin: 51.1px 0 52px;
+      margin-top: 51.1px;
+      margin-bottom: 52px;
     }
   }
 }

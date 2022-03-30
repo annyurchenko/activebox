@@ -5,12 +5,16 @@
 @import "base";
 
 // Components
+@import "components/button";
+@import "components/burger";
 @import "components/swiper";
 
 // Screens
 @import "screens/testimonials";
 @import "screens/hero";
 @import "screens/header";
+@import "screens/features";
+@import "screens/work";
 @import "./screens/team";
 @import "./screens/person";
 @import "screens/download";
