@@ -1,0 +1,94 @@
+@use "sass:map";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid map.get($colors, "gray");
+
+    @include mobile {
+      display: block;
+      border-bottom: none;
+      padding: 19px 35px 0 20px;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+
+    @include mobile {
+      flex-direction: column;
+      position: fixed;
+      top: -100%;
+      left: 20;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__menu-list.active {
+    @include mobile {
+      top: 50px;
+    }
+  }
+
+  &__menu-item {
+    display: inline-block;
+    font-weight: 700;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-align: center;
+    text-transform: uppercase;
+    color: map.get($colors, "white");
+    text-decoration: none;
+    padding: 42px 0 38px;
+    width: 134px;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid map.get($colors, "gray");
+    }
+
+    &:active {
+      border-bottom: 3px solid map.get($colors, "red");
+      color: map.get($colors, "red");
+    }
+
+    @include tablet {
+      font-size: rem(12px);
+      line-height: rem(14px);
+      width: 112px;
+    }
+
+    @include mobile {
+      text-align: left;
+      min-height: 65px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__logo-image {
+    @include mobile {
+      width: 103px;
+      position: relative;
+      z-index: 3;
+      float: left;
+    }
+  }
+}

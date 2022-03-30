@@ -1,0 +1,47 @@
+@use "sass:map";
+
+.person {
+
+  &__image {
+    margin-bottom: 30px;
+    width: 100%;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+
+  &__name {
+    text-transform: capitalize;
+    color: map.get($colors, "dark");
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    color: map.get($colors, "lightRed");
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    @include tablet {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__description {
+    color: map.get($colors, "darkGray");
+    margin-bottom: 38px;
+  }
+
+  &__networks a{
+    text-decoration: none;
+  }
+
+  &__link {
+    @include tablet {
+      width: 32px;
+    }
+  }
+
+  &__link-center {
+    margin: 0px 5px;
+  }
+}
