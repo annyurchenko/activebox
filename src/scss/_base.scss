@@ -1,4 +1,7 @@
 @use "sass:map";
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: $base-font-size;

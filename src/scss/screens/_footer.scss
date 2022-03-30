@@ -71,7 +71,7 @@
       }
   }
 
-  &__footer {
+  &__down {
     background-color: map.get($colors, "blue");
     padding: 24px 0;
     @include tablet {
