@@ -1,3 +1,5 @@
+@use "sass:map";
+
 :root {
   --swiper-pagination-bullet-horizontal-gap: 12.5px;
 
@@ -19,7 +21,7 @@
   }
 
   &-bullet {
-    border: 1px solid #7e5d6f;
+    border: 1px solid map.get($colors, "lightPurple");
     background: none;
     opacity: 1;
     width: 14px;
@@ -27,12 +29,11 @@
 
     @include tablet {
       width: 9.5px;
-
       height: 9.5px;
     }
 
     &-active {
-      background: #7e5d6f;
+      background: map.get($colors, "lightPurple");
     }
   }
 }
