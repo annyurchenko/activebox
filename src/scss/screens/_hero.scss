@@ -31,13 +31,13 @@
       padding-top: 0;
     }
   }
-  
-&__content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: opacity 0.3s, visibility 0s linear 0.3s;
-}
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+  }
   &__content.active {
     opacity: 0;
   }

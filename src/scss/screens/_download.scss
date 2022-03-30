@@ -1,13 +1,16 @@
 .download{
 &__container{
     text-align: center;
-    padding: 114px 170px;
+    padding-top: 114px;
+    padding-bottom: 114px;
 
     @include tablet{
-        padding: 78px 20px; 
+        padding-top: 78px;
+        padding-bottom: 78px;
     }
     @include mobile{
-        padding: 45px 20px; 
+        padding-top: 45px;
+        padding-bottom: 45px;
     }
 }
 

@@ -2,18 +2,21 @@
 
 .features {
   &__container {
-    padding: 116px 170px;
+    padding-top: 116px;
+    padding-bottom: 116px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 100px 30px;
 
     @include tablet {
-      padding: 78px 20px 80px;
+      padding-top: 78px;
+      padding-bottom: 80px;
       gap: 60px 20px;
     }
 
     @include mobile {
-      padding: 40px 20px 34.85px 21px;
+      padding-top: 40px;
+      padding-bottom: 35px;
       display: block;
     }
   }
