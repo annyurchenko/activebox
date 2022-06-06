@@ -5,15 +5,6 @@
 //   });
 // });
 
-
-if ($(window).width() < 768) { menuHandler(); }
-
-$(window).on('resize', function() {
-    if ($(window).width() < 768) {
-        menuHandler();
-    }
-});
-
 var menuHandler = function() {
   $(document).ready(function () {
       $(".burger, .header__menu-item").click(function (event) {
@@ -22,3 +13,10 @@ var menuHandler = function() {
       });
     });
 }
+$(window).on('resize', function() {
+    if ($(window).width() < 768) {
+        menuHandler();
+    }
+});
+
+  if ($(window).width() < 768) { menuHandler(); }
